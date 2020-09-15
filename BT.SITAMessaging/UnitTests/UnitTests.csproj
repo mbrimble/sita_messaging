@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0FB9C721-2DB3-4A3D-B77F-20CDC02E7C5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnitTests</RootNamespace>
+    <AssemblyName>UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BizUnit">
+      <HintPath>..\3rdPartyAssemblies\BizUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="BizUnit.TestSteps">
+      <HintPath>..\3rdPartyAssemblies\BizUnit.TestSteps.dll</HintPath>
+    </Reference>
+    <Reference Include="BizUnit.TestSteps.BizTalk">
+      <HintPath>..\3rdPartyAssemblies\BizUnit.TestSteps.BizTalk.dll</HintPath>
+    </Reference>
+    <Reference Include="BizUnit.TestSteps.DatacomCustom">
+      <HintPath>..\3rdPartyAssemblies\BizUnit.TestSteps.DatacomCustom.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.BizTalk.TestTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.XLANGs.BaseTypes, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.XLANGs.BaseTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BizUnitTests.cs" />
+    <Compile Include="ExternalFFSchemasUnitTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Artifacts\" />
+    <Folder Include="BizUnitTests\" />
+    <Folder Include="TestData\Internal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestData\External\TypeBMsg\UC_MVT001.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT002.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT003.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT004.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT005.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT006.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT007.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT008.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT009.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT010.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT011.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT012.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT013.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT014.RCV" />
+    <None Include="TestData\External\TypeBMsg\UC_MVT015.RCV" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExternalSchemas\ExternalSchemas.btproj">
+      <Project>{b56b52a9-9875-48a3-8a07-5332cbd906fc}</Project>
+      <Name>ExternalSchemas</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

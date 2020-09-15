@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3rdPartyAssemblies", "3rdPartyAssemblies", "{CE184084-7DF6-4D4F-9B80-6448E26431F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{01C32D25-0ECA-4FA6-8A79-4CE9D144E0DA}"
+	ProjectSection(SolutionItems) = preProject
+		BT.SITAMessaging\Build\BT.SITAMessaging.snk = BT.SITAMessaging\Build\BT.SITAMessaging.snk
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC1AB5E1-C83D-4494-AC9C-8EC62F3799B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tracking", "Tracking", "{08056886-42C9-4C9C-87D9-8E9398EDCE80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalSchemas", "BT.SITAMessaging\ExternalSchemas\ExternalSchemas.btproj", "{B56B52A9-9875-48A3-8A07-5332CBD906FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pipelines", "BT.SITAMessaging\Pipelines\Pipelines.btproj", "{D8D36639-660F-43AC-BAB8-82BBBB85A0BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "BT.SITAMessaging\UnitTests\UnitTests.csproj", "{0FB9C721-2DB3-4A3D-B77F-20CDC02E7C5D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://dnztfs:8080/tfs/dnztfsap1
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BT.SITAMessaging\\ExternalSchemas\\ExternalSchemas.btproj
+		SccProjectName1 = BT.SITAMessaging/ExternalSchemas
+		SccLocalPath1 = BT.SITAMessaging\\ExternalSchemas
+		SccProjectUniqueName2 = BT.SITAMessaging\\Pipelines\\Pipelines.btproj
+		SccProjectName2 = BT.SITAMessaging/Pipelines
+		SccLocalPath2 = BT.SITAMessaging\\Pipelines
+		SccProjectUniqueName3 = BT.SITAMessaging\\UnitTests\\UnitTests.csproj
+		SccProjectName3 = BT.SITAMessaging/UnitTests
+		SccLocalPath3 = BT.SITAMessaging\\UnitTests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B56B52A9-9875-48A3-8A07-5332CBD906FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56B52A9-9875-48A3-8A07-5332CBD906FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56B52A9-9875-48A3-8A07-5332CBD906FC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B56B52A9-9875-48A3-8A07-5332CBD906FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56B52A9-9875-48A3-8A07-5332CBD906FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B56B52A9-9875-48A3-8A07-5332CBD906FC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D8D36639-660F-43AC-BAB8-82BBBB85A0BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D36639-660F-43AC-BAB8-82BBBB85A0BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D36639-660F-43AC-BAB8-82BBBB85A0BA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D8D36639-660F-43AC-BAB8-82BBBB85A0BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D36639-660F-43AC-BAB8-82BBBB85A0BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D36639-660F-43AC-BAB8-82BBBB85A0BA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0FB9C721-2DB3-4A3D-B77F-20CDC02E7C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FB9C721-2DB3-4A3D-B77F-20CDC02E7C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FB9C721-2DB3-4A3D-B77F-20CDC02E7C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FB9C721-2DB3-4A3D-B77F-20CDC02E7C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
